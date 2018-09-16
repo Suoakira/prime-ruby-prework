@@ -6,8 +6,8 @@ def prime?(n)
   elsif n == 3 || n ==2
     return true
   end
-  if (2...n-1).any? 
-    |i| n % i == 0
+  if (2...n-1).any? {
+    |i| n % i == 0 }
       false
     else
       true
