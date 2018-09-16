@@ -7,7 +7,7 @@ def prime?(n)
     return true
   end
   if (2...n-1).any? 
-    |nums| n % nums == 0
+    |i| n % i == 0
       false
     else
       true
